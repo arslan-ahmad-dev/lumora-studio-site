@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Happy Birthday Maham Sial 💖</title>
+<meta name="description" content="A birthday website for Maham Sial, made with love by Arslan Ahmad" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28'%3E%E2%9D%A4%EF%B8%8F%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="lock-scroll">
+
+<!-- INTRO SPLASH -->
+<div class="intro-overlay" id="introOverlay">
+  <div class="intro-sparkle-field" aria-hidden="true">
+    <span>✨</span><span>💫</span><span>⭐</span><span>✨</span><span>💫</span>
+  </div>
+  <div class="intro-content">
+    <div class="intro-heart">💌</div>
+    <h1 class="intro-title">For Maham</h1>
+    <p class="intro-sub">A little something I made just for you...</p>
+    <button class="intro-btn" id="introBtn">Open It ✨</button>
+  </div>
+</div>
+
+<!-- Aurora background blobs -->
+<div class="aurora-bg" aria-hidden="true">
+  <span class="aurora-blob blob1"></span>
+  <span class="aurora-blob blob2"></span>
+  <span class="aurora-blob blob3"></span>
+</div>
+
+<!-- Floating hearts layer -->
+<div class="hearts-bg" id="heartsBg" aria-hidden="true"></div>
+
+<!-- Side dot navigation -->
+<nav class="dot-nav" aria-label="Section navigation">
+  <a href="#hero" class="dot active" data-section="hero"><span>Home</span></a>
+  <a href="#countdown" class="dot" data-section="countdown"><span>Countdown</span></a>
+  <a href="#letter" class="dot" data-section="letter"><span>Letter</span></a>
+  <a href="#reasons" class="dot" data-section="reasons"><span>Reasons</span></a>
+  <a href="#gallery" class="dot" data-section="gallery"><span>Memories</span></a>
+  <a href="#propose" class="dot" data-section="propose"><span>Question</span></a>
+</nav>
+
+<!-- HERO -->
+<header id="hero" class="hero">
+  <div class="hero-bg" style="background-image:url('top-images/hero-2.jpg')"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="eyebrow reveal">A little something for</p>
+
+    <div class="portrait-frame frame-hero reveal">
+      <span class="portrait-glow"></span>
+      <img class="portrait-img" src="top-images/hero-3.jpg" alt="Maham Sial" style="object-position:center 16%" />
+      <span class="sparkle-deco s1">✨</span>
+      <span class="sparkle-deco s2">💫</span>
+      <span class="sparkle-deco s3">🌸</span>
+    </div>
+
+    <h1 class="hero-name">
+      <span class="line1">Maham Sial</span>
+    </h1>
+    <p class="hero-sub reveal">Happy Birthday, my love ✨ &nbsp;•&nbsp; 24th September</p>
+    <p class="hero-from reveal">— with all my heart, Arslan Ahmad</p>
+    <a href="#countdown" class="scroll-cue" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </div>
+</header>
+
+<div class="divider" aria-hidden="true"><span>❀</span></div>
+
+<!-- COUNTDOWN -->
+<section id="countdown" class="section countdown-section">
+  <div class="container">
+    <h2 class="section-title reveal">Counting Down To Your Special Day</h2>
+    <p class="section-sub reveal">Every second brings me closer to celebrating you 🎂</p>
+
+    <div class="countdown-box reveal" id="countdownBox">
+      <div class="time-block">
+        <span class="time-num" id="cd-days">00</span>
+        <span class="time-label">Days</span>
+      </div>
+      <div class="time-block">
+        <span class="time-num" id="cd-hours">00</span>
+        <span class="time-label">Hours</span>
+      </div>
+      <div class="time-block">
+        <span class="time-num" id="cd-mins">00</span>
+        <span class="time-label">Minutes</span>
+      </div>
+      <div class="time-block">
+        <span class="time-num" id="cd-secs">00</span>
+        <span class="time-label">Seconds</span>
+      </div>
+    </div>
+
+    <div class="birthday-banner hidden" id="birthdayBanner">
+      🎉 IT'S YOUR BIRTHDAY, MAHAM! 🎉<br />I hope your day is as beautiful as you are.
+    </div>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true"><span>❀</span></div>
+
+<!-- LOVE LETTER -->
+<section id="letter" class="section letter-section">
+  <div class="container letter-container">
+    <div class="portrait-frame frame-letter reveal">
+      <span class="portrait-glow"></span>
+      <img class="portrait-img" src="top-images/hero-1.jpg" alt="Maham Sial" style="object-position:center 14%" />
+      <span class="sparkle-deco s1">✨</span>
+      <span class="sparkle-deco s2">🌸</span>
+    </div>
+    <h2 class="section-title reveal">A Little Letter For You</h2>
+    <div class="letter-card reveal">
+      <p class="letter-greeting">My Dearest Maham,</p>
+      <p class="typewriter-text" id="typewriterText"></p>
+      <p class="letter-signoff">Forever yours,<br /><span class="signature">Arslan Ahmad</span></p>
+    </div>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true"><span>❀</span></div>
+
+<!-- REASONS -->
+<section id="reasons" class="section reasons-section">
+  <div class="container">
+    <h2 class="section-title reveal">Just a Few Reasons I Love You</h2>
+    <p class="section-sub reveal">(There are a million more, this list would never end)</p>
+    <div class="reasons-grid">
+      <div class="reason-card reveal"><span class="reason-num">01</span><span class="reason-icon">😊</span><p>Your smile fixes my entire day, every single time.</p></div>
+      <div class="reason-card reveal"><span class="reason-num">02</span><span class="reason-icon">🤗</span><p>You make me feel safe, seen, and understood.</p></div>
+      <div class="reason-card reveal"><span class="reason-num">03</span><span class="reason-icon">💬</span><p>I could talk to you for hours and it never gets boring.</p></div>
+      <div class="reason-card reveal"><span class="reason-num">04</span><span class="reason-icon">🌙</span><p>You're the last thing I think of before sleeping.</p></div>
+      <div class="reason-card reveal"><span class="reason-num">05</span><span class="reason-icon">🌸</span><p>You're kind to everyone, even when no one's watching.</p></div>
+      <div class="reason-card reveal"><span class="reason-num">06</span><span class="reason-icon">💖</span><p>Simply put — you're my favorite person in this world.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true"><span>❀</span></div>
+
+<!-- GALLERY -->
+<section id="gallery" class="section gallery-section">
+  <div class="container">
+    <h2 class="section-title reveal">Our Beautiful Memories</h2>
+    <p class="section-sub reveal">Every picture, a moment I never want to forget</p>
+    <div class="gallery-grid" id="galleryGrid">
+      <!-- filled by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous">&#10094;</button>
+  <img class="lightbox-img" id="lightboxImg" src="" alt="Memory" />
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next">&#10095;</button>
+</div>
+
+<!-- PROPOSE -->
+<section id="propose" class="section propose-section">
+  <div class="propose-bg" style="background-image:url('top-images/hero-1.jpg')"></div>
+  <div class="propose-overlay"></div>
+  <div class="container propose-container">
+    <div class="portrait-frame frame-propose reveal">
+      <span class="portrait-glow"></span>
+      <img class="portrait-img" src="top-images/hero-2.jpg" alt="Maham Sial" style="object-position:center 18%" />
+      <span class="sparkle-deco s1">✨</span>
+      <span class="sparkle-deco s2">💫</span>
+      <span class="sparkle-deco s3">🌸</span>
+    </div>
+    <h2 class="section-title light reveal">One Last Thing, Maham...</h2>
+    <div class="propose-card reveal" id="proposeCard">
+      <p class="propose-question">Will You Marry Me? 💍</p>
+      <div class="propose-buttons" id="proposeButtons">
+        <button class="btn btn-yes" id="btnYes">Yes 😍</button>
+        <button class="btn btn-no" id="btnNo">No</button>
+      </div>
+      <p class="propose-hint" id="proposeHint">(go on, try clicking "No" 😏)</p>
+    </div>
+  </div>
+</section>
+
+<!-- CELEBRATION OVERLAY -->
+<div class="celebration" id="celebration">
+  <canvas id="confettiCanvas"></canvas>
+  <div class="celebration-content">
+    <h2>YES! 🎉💍</h2>
+    <p>I knew it, Maham! I love you more than words can ever say.</p>
+    <p class="celebration-sign">— Arslan Ahmad ❤️</p>
+    <button class="btn btn-replay" id="btnReplay">Close</button>
+  </div>
+</div>
+
+<!-- NO MODAL -->
+<div class="no-modal" id="noModal">
+  <div class="no-modal-card">
+    <p>Sorry Maham, you have no other option but to marry me! 😂❤️</p>
+    <button class="btn btn-yes" id="btnOkayFine">Okay fine... YES! 😍</button>
+  </div>
+</div>
+
+<footer class="footer">
+  <p>Made with <span class="beat">❤️</span> by Arslan Ahmad, for Maham Sial</p>
+  <p class="footer-sub">Every day with you feels like a celebration.</p>
+</footer>
+
+<!-- Surprise button (easter egg) -->
+<button class="surprise-btn" id="surpriseBtn" aria-label="Tap for a surprise">💝</button>
+<div class="surprise-toast" id="surpriseToast"></div>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
